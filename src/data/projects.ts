@@ -131,6 +131,7 @@ export const projects: Project[] = [
     id: 32,
     teamName: "Alex Hasenbein - Team 32",
     image: "./assets/team32.png",
+    videoUrl: "./assets/team32.mp4",
     rank: 1,
     category: "ai-agents-llm",
   },
