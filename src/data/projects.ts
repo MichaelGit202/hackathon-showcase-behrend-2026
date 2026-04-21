@@ -49,18 +49,7 @@ export const projects: Project[] = [
     award: "Most Commits",
     category: "open-innovation",
   },
-  {
-    id: 13,
-    teamName: "Rose Date - Team 13",
-    image: "./assets/team13.png",
-    category: "open-innovation",
-  },
-  {
-    id: 16,
-    teamName: "Yasir Almutairi and Amr Megahed - Team 16",
-    image: "./assets/team16.png",
-    category: "open-innovation",
-  },
+
   {
     id: 17,
     teamName: "Adzfar Daniel Aria Putera - Team 17",
@@ -81,13 +70,6 @@ export const projects: Project[] = [
     teamName: "Ian Perez and Luke Hackworth - Team 20",
     image: "./assets/team20.png",
     videoUrl: "./assets/team20.mp4",
-    category: "open-innovation",
-  },
-  {
-    id: 23,
-    teamName: "Keira Kennedy and Andrew Lucas - Team 23",
-    image: "./assets/team23.png",
-    videoUrl: "./assets/team23.mp4",
     category: "open-innovation",
   },
   {
@@ -119,12 +101,7 @@ export const projects: Project[] = [
     videoUrl: "./assets/team28.mp4",
     category: "open-innovation",
   },
-  {
-    id: 30,
-    teamName: "Noah Basinger and Hope Rutkowski - Team 30",
-    image: "./assets/team30.png",
-    category: "open-innovation",
-  },
+
 
   // AI Agents & LLMs
   {
@@ -159,12 +136,6 @@ export const projects: Project[] = [
     category: "ai-agents-llm",
   },
   {
-    id: 10,
-    teamName: "Remone Carter - Team 10",
-    image: "./assets/team10.png",
-    category: "ai-agents-llm",
-  },
-  {
     id: 11,
     teamName: "Dania Nasreen Abd Aziz - Team 11",
     image: "./assets/team11.png",
@@ -177,12 +148,6 @@ export const projects: Project[] = [
     image: "./assets/team12.png",
     videoUrl: "./assets/team12.mp4",
     award: "Best Sales Pitch Video",
-    category: "ai-agents-llm",
-  },
-  {
-    id: 14,
-    teamName: "Hope Pating - Team 14",
-    image: "./assets/team14.png",
     category: "ai-agents-llm",
   },
   {
