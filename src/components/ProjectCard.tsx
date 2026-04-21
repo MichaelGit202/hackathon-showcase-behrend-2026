@@ -7,7 +7,7 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const { teamName, image, title, rank, videoUrl } = project;
+  const { teamName, image, rank, award, videoUrl } = project;
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isHovering, setIsHovering] = useState(false);
   
@@ -72,7 +72,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               <>
                 <img 
                   src={image} 
-                  alt={title} 
+                  alt={teamName} 
                   className={`w-full h-full object-cover transition-opacity duration-300 ${
                     isHovering ? 'opacity-0' : 'opacity-100'
                   }`}
@@ -91,21 +91,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
             ) : (
               <img 
                 src={image} 
-                alt={title} 
+                alt={teamName} 
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
             )}
           </div>
           
           <div className="p-4">
-            <h3 className="text-lg font-semibold mb-1">{title}</h3>
-            <p className="text-sm text-gray-300">{teamName}</p>
+            <p className="text-sm font-semibold text-gray-100">{teamName}</p>
+            {award && <p className="text-xs text-hackathon-accent mt-1">{award}</p>}
           </div>
         </div>
       </DialogTrigger>
       
       <DialogContent className="max-w-[50vw] max-h-[50vh]">
-        <DialogTitle className="sr-only">{title}</DialogTitle>
+        <DialogTitle className="sr-only">{teamName}</DialogTitle>
         {videoUrl ? (
           <video 
             src={videoUrl}
@@ -116,7 +116,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         ) : (
           <img 
             src={image}
-            alt={title}
+            alt={teamName}
             className="w-full h-80 object-contain"
           />
         )}

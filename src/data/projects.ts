@@ -1,164 +1,243 @@
 export interface Project {
   id: number;
-  title: string;
   teamName: string;
   image: string;
   videoUrl?: string;
   rank?: number;
-  category: 'ai-gestures' | 'algorithmic-trading' | 'health-wellness';
+  award?: string;
+  category: 'open-innovation' | 'ai-agents-llm' | 'ethical-hacking';
 }
 
 export const projects: Project[] = [
-  // AI Gestures Projects
+  // Open Innovation
   {
-    id: 2,
-    teamName: "Ali Ostowar - Team 2",
-    image: "./assets/team2.png",
-    title: "Trading dashboard and trading algo",
-    category: "algorithmic-trading",
-    videoUrl: "./assets/team2.mp4",
-    rank: 1
+    id: 1,
+    teamName: "Morgan Koch and Jamie Frantz - Team 1",
+    image: "./assets/team1.png",
+    videoUrl: "./assets/team1.mp4",
+    rank: 1,
+    category: "open-innovation",
   },
   {
-    id: 3,
-    teamName: "Mohammed Albattah and Austin Wilson- Team 3",
-    image: "./assets/team3.png",
-    title: "RPS Game with Graphics and Multiplayer",
-    category: "ai-gestures",
-    videoUrl: "./assets/team3.mp4",
-    rank: 3
+    id: 2,
+    teamName: "Dylan Fisher and Nathan Englert - Team 2",
+    image: "./assets/team2.png",
+    videoUrl: "./assets/team2.mp4",
+    category: "open-innovation",
   },
   {
     id: 4,
-    teamName: "Jackie Thorward - Team 4",
+    teamName: "Isaac Bruner - Team 4",
     image: "./assets/team4.png",
-    title: "3d Unity RPS game",
-    category: "ai-gestures",
     videoUrl: "./assets/team4.mp4",
-    rank: 1
+    award: "Most Needed By Engineers",
+    category: "open-innovation",
   },
   {
     id: 5,
-    teamName: "Adam Gavio and Riley Fry - Team 5",
+    teamName: "Shane Lawrence and Owen Larmon - Team 5",
     image: "./assets/team5.png",
-    title: "history terminal and trading algorithm",
-    category: "algorithmic-trading",
     videoUrl: "./assets/team5.mp4",
-  },
-  {
-    id: 6,
-    teamName: "Wai Tee and Muhammad Sallahuddin - Team 6",
-    image: "./assets/team6.png",
-     title: "Mobile RPS Roulette",
-    category: "ai-gestures",
-    videoUrl: "./assets/team6.mp4",
-    rank: 2
-  },
-
-  // Algorithmic Trading Projects
-
-  {
-    id: 7,
-    teamName: "Michael Meyers and Joseph Letko - Team 7",
-    image: "./assets/team7.png",
-    title: "RPS Battle",
-    category: "ai-gestures",
-    videoUrl: "./assets/team7.mp4",
+    award: "Best Forensics App",
+    category: "open-innovation",
   },
   {
     id: 8,
-    teamName: "Muratbek Jusupov - Team 8",
+    teamName: "Olivia Beck and Kaitlyn Milcoff - Team 8",
     image: "./assets/team8.png",
-    title: "Recipe Website",
-    category: "health-wellness",
-    videoUrl: "./assets/team8.mp4"
-  },
-  {
-    id: 10,
-    teamName: "Yusuf Jabbar and Islombek Shamsiev - Team 10",
-    image: "./assets/team10.png",
-     title: "Mindful - Best Sales Pitch",
-    category: "health-wellness",
-    videoUrl: "./assets/team10.mp4"
-  },
-  {
-    id: 11,
-    teamName: "Akash Vajjala - Team 11",
-    image: "./assets/team11.png",
-    title: "RPS with Custom Algo",
-    category: "ai-gestures",
-    videoUrl: "./assets/team11.mp4"
-  },
-
-  // Health & Wellness Projects
-  {
-    id: 12,
-    teamName: "Joel Sander and Dylan Fisher - Team 12",
-    image: "./assets/team12.png",
-    title: "My Pack",
-    category: "health-wellness",
-    videoUrl: "./assets/team12.mp4",
-    rank: 1
+    videoUrl: "./assets/team8.mp4",
+    award: "Most Commits",
+    category: "open-innovation",
   },
   {
     id: 13,
-    teamName: "Kaitlyn Milcoff and Olivia Beck - Team 13",
+    teamName: "Rose Date - Team 13",
     image: "./assets/team13.png",
-    title: "Trading dashboard and algo",
-    category: "algorithmic-trading",
-    videoUrl: "./assets/team13.mp4",
-    rank: 3
+    category: "open-innovation",
   },
-  
   {
     id: 16,
-    teamName: "Vitaliy Pikalo and Ghali Ouaritini - Team 16 ", // No associated award info
+    teamName: "Yasir Almutairi and Amr Megahed - Team 16",
     image: "./assets/team16.png",
-    title: "RPS Multiplayer and RPS with difficulty",
-    videoUrl: "./assets/team16.mp4",
-    category: "ai-gestures",
+    category: "open-innovation",
   },
   {
     id: 17,
-    teamName: "Carl Zhang and John Pham - Team 17", // No associated award info
+    teamName: "Adzfar Daniel Aria Putera - Team 17",
     image: "./assets/team17.png",
-    title: "Trading interface and SMA algo",
-    category: "algorithmic-trading",
     videoUrl: "./assets/team17.mp4",
-    rank:2 
+    category: "open-innovation",
   },
   {
-    id: 19,
-    teamName: "Jacob Riggs – Team 19", // No associated award info
-    image: "./assets/team19.png",
-    title: "Health Explorer",
-    category: "health-wellness",
-    videoUrl: "./assets/team19.mp4",
-    rank: 3
+    id: 18,
+    teamName: "Eric Zurn - Team 18",
+    image: "./assets/team18.png",
+    videoUrl: "./assets/team18.mp4",
+    rank: 3,
+    category: "open-innovation",
   },
   {
-    id: 21,
-    teamName: "Owen Larmon and Omar Almutairi – Team 21", // No associated award info
-    image: "./assets/team21.png",
-    title: "DigiPals",
-    category: "health-wellness",
-    videoUrl: "./assets/team21.mp4"
+    id: 20,
+    teamName: "Ian Perez and Luke Hackworth - Team 20",
+    image: "./assets/team20.png",
+    videoUrl: "./assets/team20.mp4",
+    category: "open-innovation",
   },
   {
-    id: 22,
-    teamName: "Daniel Pora and Collin Miller – Team 22", // No associated award info
-    image: "./assets/team22.png",
-    title: "Baby SWENG",
-    category: "health-wellness",
-    rank: 2,
-    videoUrl: "./assets/team22.mp4"
+    id: 23,
+    teamName: "Keira Kennedy and Andrew Lucas - Team 23",
+    image: "./assets/team23.png",
+    videoUrl: "./assets/team23.mp4",
+    category: "open-innovation",
   },
   {
     id: 24,
-    teamName: "Liam Good - Team 24", // No associated award info
+    teamName: "Flame - Team 24",
     image: "./assets/team24.png",
-    title: "RPS Game",
-    category: "ai-gestures",
-    videoUrl: "./assets/team24.mp4"
+    videoUrl: "./assets/team24.mp4",
+    category: "open-innovation",
+  },
+  {
+    id: 25,
+    teamName: "Liam Good - Team 25",
+    image: "./assets/team25.png",
+    videoUrl: "./assets/team25.mp4",
+    rank: 2,
+    category: "open-innovation",
+  },
+  {
+    id: 26,
+    teamName: "Logan Lott - Team 26",
+    image: "./assets/team26.png",
+    videoUrl: "./assets/team26.mp4",
+    category: "open-innovation",
+  },
+  {
+    id: 28,
+    teamName: "Davis Saynuk and Daniel Squair - Team 28",
+    image: "./assets/team28.png",
+    videoUrl: "./assets/team28.mp4",
+    category: "open-innovation",
+  },
+  {
+    id: 30,
+    teamName: "Noah Basinger and Hope Rutkowski - Team 30",
+    image: "./assets/team30.png",
+    category: "open-innovation",
+  },
+
+  // AI Agents & LLMs
+  {
+    id: 32,
+    teamName: "Alex Hasenbein - Team 32",
+    image: "./assets/team32.png",
+    rank: 1,
+    category: "ai-agents-llm",
+  },
+  {
+    id: 6,
+    teamName: "Joel Sander and Nathan Mascia - Team 6",
+    image: "./assets/team6.png",
+    videoUrl: "./assets/team6.mp4",
+    rank: 2,
+    category: "ai-agents-llm",
+  },
+  {
+    id: 9,
+    teamName: "Mohammed Albattah and Alex Wriglesworth - Team 9",
+    image: "./assets/team9.png",
+    videoUrl: "./assets/team9.mp4",
+    rank: 3,
+    category: "ai-agents-llm",
+  },
+  {
+    id: 3,
+    teamName: "Jacqueline Thorward - Team 3",
+    image: "./assets/team3.png",
+    videoUrl: "./assets/team3.mp4",
+    category: "ai-agents-llm",
+  },
+  {
+    id: 10,
+    teamName: "Remone Carter - Team 10",
+    image: "./assets/team10.png",
+    category: "ai-agents-llm",
+  },
+  {
+    id: 11,
+    teamName: "Dania Nasreen Abd Aziz - Team 11",
+    image: "./assets/team11.png",
+    videoUrl: "./assets/team11.mp4",
+    category: "ai-agents-llm",
+  },
+  {
+    id: 12,
+    teamName: "Riley Fry and Adam Gavio - Team 12",
+    image: "./assets/team12.png",
+    videoUrl: "./assets/team12.mp4",
+    award: "Best Sales Pitch Video",
+    category: "ai-agents-llm",
+  },
+  {
+    id: 14,
+    teamName: "Hope Pating - Team 14",
+    image: "./assets/team14.png",
+    category: "ai-agents-llm",
+  },
+  {
+    id: 15,
+    teamName: "Uday Aditya Jain and Arjun Tiyagi - Team 15",
+    image: "./assets/team15.png",
+    videoUrl: "./assets/team15.mp4",
+    award: "Funniest App Name",
+    category: "ai-agents-llm",
+  },
+  {
+    id: 21,
+    teamName: "Muratbek Jusupov and Waisoon Tee - Team 21",
+    image: "./assets/team21.png",
+    videoUrl: "./assets/team21.mp4",
+    award: "Most Hacky App",
+    category: "ai-agents-llm",
+  },
+  {
+    id: 27,
+    teamName: "Christopher Zampogna and Patrick Zhao - Team 27",
+    image: "./assets/team27.png",
+    videoUrl: "./assets/team27.mp4",
+    category: "ai-agents-llm",
+  },
+  {
+    id: 31,
+    teamName: "Justin Williams - Team 31",
+    image: "./assets/team31.png",
+    videoUrl: "./assets/team31.mp4",
+    category: "ai-agents-llm",
+  },
+
+  // Ethical Hacking & Security
+  {
+    id: 19,
+    teamName: "Christian Pritchard-Geddie and Siddharth Perumal - Team 19",
+    image: "./assets/team19.png",
+    videoUrl: "./assets/team19.mp4",
+    rank: 1,
+    category: "ethical-hacking",
+  },
+  {
+    id: 7,
+    teamName: "Nathan Fantoni and Lucas Mosher - Team 7",
+    image: "./assets/team7.png",
+    videoUrl: "./assets/team7.mp4",
+    rank: 2,
+    category: "ethical-hacking",
+  },
+  {
+    id: 22,
+    teamName: "Oludemilade Adenubi - Team 22",
+    image: "./assets/team22.png",
+    videoUrl: "./assets/team22.mp4",
+    rank: 3,
+    category: "ethical-hacking",
   },
 ];

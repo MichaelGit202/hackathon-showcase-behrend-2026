@@ -22,10 +22,10 @@ const HackathonHeader: React.FC = () => {
       </div>
       
       <h1 className="text-4xl md:text-5xl font-bold mb-2 bg-gradient-to-r from-hackathon-accent to-hackathon-accent2 bg-clip-text text-transparent">
-          Spring 2025 Hackathon
+          Spring 2026 Hackathon
       </h1>
       <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-        The Behrend ACM chapter recently hosted an engaging and fast-paced hackathon that challenged passionate students to conceive, develop, and test innovative projects within a compressed eight-hour timeframe. This year's event showcased a diverse range of technical interests, with participants tackling categories such as an AI gesture-based Rock-Paper-Scissors game leveraging technologies like Google MediaPipe, an algorithmic trading system, and a health & wellness application potentially utilizing React Native and REST services, alongside resources like Lovable, Cursor, React, and Claude.
+        The Behrend ACM chapter hosted its Spring 2026 Hackathon, bringing together students across disciplines for an intense eight-hour build event. This year's competition featured three tracks: Open Innovation, where teams had full creative freedom to build anything they envisioned; AI Agents and LLMs, challenging participants to harness large language models and autonomous agents in practical applications; and Ethical Hacking and Security, where teams tackled real-world cybersecurity problems and built tools to expose or defend against vulnerabilities. Across all three tracks, students demonstrated creativity, technical depth, and the ability to ship working software under pressure.
       </p>
     </div>
   );
